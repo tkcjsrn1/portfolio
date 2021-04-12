@@ -1,0 +1,783 @@
+@charset "utf-8";
+ 
+*
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+ 
+ul
+{
+    list-style: none;
+}
+ 
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+ 
+.clearfix::after, .clearfix::before
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+ 
+body
+{   
+    height: 1500px;
+    color: #888;
+    background-color: #fff;
+}
+ 
+img
+{
+    border: 0;
+    vertical-align: top;
+}
+ 
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+ 
+.modal
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+ 
+.modal .modal_inner
+{
+    position: fixed;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #737373;
+}
+ 
+.modal .modal_inner p.tit
+{
+    font-size: 40x;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #caac7d;
+}
+ 
+.modal .modal_inner ul.txt
+{
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 20px;
+}
+.modal .modal_inner ul.txt li a{
+    padding-top: 50px;
+}
+.modal  .modal_inner .btn
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    background-color: #caac7d;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.modal2
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+ 
+.modal2 .modal2_inner
+{
+    position: fixed;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #737373;
+}
+ 
+.modal2 .modal2_inner p.tit
+{
+    font-size: 40x;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #caac7d;
+}
+ 
+.modal2 .modal2_inner ul.txt
+{
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 20px;
+}
+.modal2 .modal2_inner ul.txt li a{
+    padding-top: 50px;
+}
+.modal2  .modal2_inner .btn
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    background-color: #caac7d;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.modal3
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+ 
+.modal3 .modal3_inner
+{
+    position: fixed;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #737373;
+}
+ 
+.modal3 .modal3_inner p.tit
+{
+    font-size: 40x;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #caac7d;
+}
+ 
+.modal3 .modal3_inner ul.txt
+{
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 20px;
+}
+.modal3 .modal3_inner ul.txt li a{
+    padding-top: 50px;
+}
+.modal3  .modal3_inner .btn
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    background-color: #caac7d;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.modal4
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+ 
+.modal4 .modal4_inner
+{
+    position: fixed;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #737373;
+}
+ 
+.modal4 .modal4_inner p.tit
+{
+    font-size: 40x;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #caac7d;
+}
+ 
+.modal4 .modal4_inner ul.txt
+{
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 20px;
+}
+.modal4 .modal4_inner ul.txt li a{
+    padding-top: 50px;
+}
+.modal4  .modal4_inner .btn
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    background-color: #caac7d;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+header
+{
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+ 
+header h1
+{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+ 
+header h1 a img
+{
+    width: 255px;
+    height: 60px;
+}
+.txt>a{
+    color: rgb(22, 22, 146);
+}
+nav
+{
+    float: right;
+    width: 800px;
+    margin-top: 53px;
+}
+ 
+nav .nav_bg{
+    width: 1200px;
+    height: 160px;
+    background-color: #dfdfdf;
+    position: absolute;
+    left: 352px;
+    top: 100px;
+    display: none;
+}
+.gallary>.gal_txt{
+    width: 150px;
+}
+nav ul.gnb
+{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+ 
+nav ul.gnb>li
+{
+    width: 20%;
+    float: left;
+    position: relative;
+}
+ 
+nav ul.gnb>li>a
+{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 22px;
+}
+ 
+nav ul.gnb>li:hover>a
+{
+    background: #caac7d;
+    color: #fff;
+}
+ 
+nav ul.gnb>li>ul.sub
+{
+    width: 101%;    
+    height: 160px;
+    position: absolute;
+    left: 1px;
+    top: 45px;
+    background: #fff;
+    border: 1px solid #cca058;
+    border-top: 0;
+    display: none;
+}
+ 
+nav ul.gnb>li:last-child>ul.sub
+{
+    border-right: 1px solid #cca058;
+}
+ 
+nav ul.gnb>li>ul.sub>li
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+ 
+nav ul.gnb>li>ul.sub>li>a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+ 
+nav ul.gnb>li>ul.sub>li:hover>a
+{
+    background: #4a4948;
+    color: #fff;
+}
+ 
+.slide
+{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.gallary>.gal>li>a>img{
+    border: 1px solid #000;
+}
+
+.slide img
+{
+    width: 100%;
+    height: 400px;
+}
+ 
+.slide li
+{
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: -400px;
+    left: 0;
+}
+ 
+.slide li:first-child
+{ 
+    top: 0; 
+}
+ 
+.content
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+ 
+.content section
+{
+    float: left;
+}
+ 
+section>h3
+{
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    background-color: #db7e26;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2.5px 2.5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+.gal{
+
+    text-align: center;
+}
+
+ 
+.content .notice_gal
+{
+    float: left;
+    width: 390px;
+    height: 200px;
+    position: relative;
+    margin-right: 5px;
+}
+span{
+    font-size: 3px;
+}
+.content .gallary
+{
+    float: left;
+    width: 495px;
+    height: 200px;
+    position: relative;
+    margin-right: 5px;
+}
+ 
+.content .notice_gal h3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #ccc;
+}
+ 
+.content .notice_gal h3.on
+{
+    background-color: #db7e26;
+    border-radius: 5px 5px 0 0;
+}
+ 
+.content .notice_gal ul
+{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 5px;
+}
+ 
+.content .notice_gal ul.on
+{
+    display: block;
+}
+ 
+.content .notice_gal ul.notice
+{
+    width: 100%;
+}
+ 
+.content .notice_gal ul.notice li
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    position: relative;
+    transition: all 0.6s;
+}
+ 
+.content .notice_gal ul.notice li a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+.content .notice_gal ul.notice li a:hover
+{
+    color: #ccc;
+}
+ 
+.content .notice_gal ul.notice li a .day
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ 
+.content .gallary ul
+{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 5px;
+}
+ 
+.content .gallary ul.gal
+{
+    width: 100%;
+}
+.content .gallary ul.gal>li:hover
+{
+    opacity: 0.7;
+}
+
+ 
+.content .gallary ul.gal li
+{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+ 
+.content .notice_gal ul.gal li:hover
+{
+    opacity: 0.7;
+}
+ 
+.content .gallary ul.gal li img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+ 
+.content .banner
+{
+    width: 300px;
+    height: 200px;
+    margin-right: 5px;
+}
+ 
+.content .banner a
+{
+    display: block;
+    width: 100%;
+    height: 170px;
+    border: 1px solid #737373; 
+}
+ 
+.content .banner a img
+{
+    width: 100%;
+    height: 170px;
+}
+ 
+.content .baro
+{
+    width: 340px;
+    height: 200px;
+}
+ 
+.content .baro ul
+{
+    width: 100%;
+    height: 170px;
+    padding: 10px;
+    border: 1px solid #737373;  
+    text-align: center;
+}
+ 
+.content .baro ul li
+{
+    width: 104px;
+    height: 150px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding-top: 100px;
+    background-size: 70px 60px;
+    background-repeat: no-repeat;
+    background-position: 15px 20px;
+}
+ 
+.content .baro ul li:nth-child(1)
+{
+    background-image: url(../images/sub1.jpg);
+    margin-right: 3px;
+}
+ 
+.content .baro ul li:nth-child(2)
+{
+    background-image: url(../images/sub2.jpg);
+    margin-right: 3px;
+}
+ 
+.content .baro ul li:nth-child(3)
+{
+    background-image: url(../images/sub3.jpg);
+    border-bottom: 1px solid #aaa;
+}
+ 
+.content .baro ul li a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+.content .baro ul li:hover
+{
+    color: #caac7d;
+    opacity: 0.7; 
+}
+ 
+footer
+{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+ 
+footer .f_left
+{
+    width: 80%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+    border : 1px solid #333;
+    border-top: 0;
+}
+ 
+footer ul.f_menu
+{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 28px;
+}
+ 
+footer ul.f_menu li
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+ 
+footer ul.f_menu li:hover
+{
+    color: #888;
+}
+ 
+footer ul.copy
+{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+}
+ 
+ 
+footer ul.copy li
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+ 
+footer .fam
+{
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    text-align: center;
+}
+ 
+footer .fam p
+{
+    width: 90%;
+    height: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+    line-height: 8px;
+    text-align: center;
+}
+ 
+footer .fam select
+{
+    width: 90%;
+    height: 25px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* footer .fam{
+	float: left;
+	width: 150px;
+	font-size: 14px;
+	text-align: center;
+}
+
+footer .fam p{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	background: #1d8844;
+	cursor: pointer;
+} */
+
+footer .fam p.on l{
+	display: inline-block;
+	transform: rotate(180deg);
+}
+
+footer .fam ul{
+	width: 100%;
+	display: none;
+}
+
+footer .fam ul li{
+	width: 100%;
+	height: 27px;
+	line-height: 25px;
+    background: #ff9e5d;
+    border: 1px solid rgb(255, 255, 255);
+}
