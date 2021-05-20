@@ -1,0 +1,5 @@
+﻿  소스.c
+C:\Users\정혁\source\repos\baseball game\baseball game\소스.c(12,11): warning C4101: 'n2' :참조되지 않은 지역 변수입니다.
+C:\Users\정혁\source\repos\baseball game\baseball game\소스.c(12,7): warning C4101: 'n1' :참조되지 않은 지역 변수입니다.
+C:\Users\정혁\source\repos\baseball game\baseball game\소스.c(12,15): warning C4101: 'n3' :참조되지 않은 지역 변수입니다.
+  baseball game.vcxproj -> C:\Users\정혁\source\repos\baseball game\Debug\baseball game.exe
